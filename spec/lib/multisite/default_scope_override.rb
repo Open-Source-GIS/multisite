@@ -61,6 +61,14 @@ describe Multisite::DefaultScopeOverride do
 
       w = Widget.find_by_name 'josh widget'
       w.should_not be_nil
+
+      Multisite.current_site = @site1
+
+      w = Widget.find_by_name 'jd widget'
+      w.should_not be_nil
+
+      w = Widget.find_by_name 'josh widget'
+      w.should be_nil
     end
   end
 end
