@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Multisite::VERSION
   s.authors     = ["Josh Adams"]
   s.email       = ["josh@isotope11.com"]
-  s.homepage    = ""
+  s.homepage    = "http://github.com/isotope11/multisite"
   s.summary     = %q{Make a naive rails app multisite easily}
 
   s.rubyforge_project = "multisite"
